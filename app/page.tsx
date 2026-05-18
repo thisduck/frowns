@@ -8,7 +8,13 @@ export default function HomePage() {
       <div className="hero hero-split" data-track-section="hero">
         <div>
           <p className="kicker">NEGATIVITY, REVERSED</p>
-          <TypewriterHeading text="Turn bad tone into better outcomes — without losing your cool." />
+          <TypewriterHeading
+            lines={[
+              "Turn bad tone into better outcomes — without losing your cool.",
+              "Catch negativity in real time — before it spirals.",
+              "Keep every conversation on-brand, on-tone, and oddly uplifting.",
+            ]}
+          />
           <p className="lead">
             Real-time tone guidance, playful defaults, and serious guardrails — so every
             conversation stays productive, on-brand, and surprisingly uplifting.
