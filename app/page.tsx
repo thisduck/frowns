@@ -1,22 +1,29 @@
 import Link from "next/link";
 import { products } from "@/lib/products";
+import { TypewriterHeading } from "@/components/typewriter-heading";
 
 export default function HomePage() {
   return (
     <section className="container content-grid">
-      <div className="hero hero-split">
+      <div className="hero hero-split" data-track-section="hero">
         <div>
-          <p className="kicker">TURN SMILES UPSIDE DOWN</p>
-          <h1>Frowns helps you reverse negativity without losing your composure.</h1>
+          <p className="kicker">NEGATIVITY, REVERSED</p>
+          <TypewriterHeading
+            lines={[
+              "Turn bad tone into better outcomes — without losing your cool.",
+              "Catch negativity in real time — before it spirals.",
+              "Keep every conversation on-brand, on-tone, and oddly uplifting.",
+            ]}
+          />
           <p className="lead">
-            We combine tone intelligence, playful confidence, and serious infrastructure to
-            help teams keep conversations useful, fast, and oddly uplifting.
+            Real-time tone guidance, playful defaults, and serious guardrails — so every
+            conversation stays productive, on-brand, and surprisingly uplifting.
           </p>
           <div className="hero-cta">
-            <Link href="/products/frown-flip" className="button button-primary">
+            <Link href="/products/frown-flip" className="button button-primary" data-track-click="hero_cta_frown_flip">
               Explore Frown Flip
             </Link>
-            <Link href="/enterprise" className="button button-secondary">
+            <Link href="/enterprise" className="button button-secondary" data-track-click="hero_cta_enterprise">
               Enterprise Controls
             </Link>
           </div>
